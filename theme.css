@@ -1,0 +1,305 @@
+@import url( https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700);
+* {
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-image: url(images/bgImg.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+main {
+	width: 80%;
+	min-height: 100%;
+	margin: auto;
+	max-width: 1000px;
+	background-color: white;
+	border: 4px solid black;
+	font-family: 'Saira Semi Condensed', sans-serif;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+main h3 {
+	margin-left: 10px; 
+}
+
+header {
+	padding: 10px;
+	padding-bottom: 0px;
+	background-color: #170C00;
+	border-top: 2px solid black;
+	border-bottom:  2px solid black;
+}
+
+aside {
+	float: right;
+	width: 35%;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+p {
+	margin: 10px;
+	color: black;
+}
+h1 {
+	color: white;
+	font-family: 'Playfair Display SC', serif;
+}
+
+h2 {
+	margin-left: 10px;
+	margin-top: 10px;
+	color: black;
+}
+
+h3 {
+	color: black;
+	font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+h3.info {
+	color: white;
+}
+
+aside h3 {
+	margin: 0;
+}
+
+nav {
+	width: 100;
+	background-color: #170C00;
+	color: white;
+	font-size: 1.5em;
+	border-bottom: 2px solid black;
+	padding: 5px;
+
+}
+
+nav li {
+	list-style: none;
+	display: inline-block;
+	color: white;
+	padding-right: 5px;
+	padding-left: 5px;
+	border: 2px solid #170C00;
+	margin: 0;
+}
+
+nav li a {
+	text-decoration: none;
+	border: 2px solid #170C00;
+	color: white;
+}
+
+nav li a:hover {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+footer {
+	width: 100%;
+	float: bottom;
+	color: white;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	background-color: #170C00;
+}
+
+iframe {
+	border: 2px solid black;
+	margin-left: 5px;
+}
+
+form {
+	color: black;
+}
+
+button {
+	background-color: #170c00;
+	border: none;
+	font-size: 1.5em;
+	display: none;
+}
+
+
+#foodPics {
+	width: 50%;
+	border: 2px solid black;
+	margin-left: 10px;
+}
+
+.cinnLate {
+	width: 60%;
+	border: 2px solid black;
+}
+
+#Mobileul {
+	display: none;
+}
+
+#MobileMenu ul li:hover > #Mobileul {
+	display: block;
+	text-align: center;
+}
+
+#MobileMenu ul li:hover > #Mobileul li{
+	width: 100%;
+}
+
+#MobileMenu {
+	display: none;
+}
+
+span {
+	font-size: .6em;
+	padding-top: 0px;
+	padding-left: 10px;
+	font-family: 'Saira Semi Condensed', sans-serif;
+	display: inline-block;
+}
+
+@media (max-width: 1240px) {
+
+iframe {
+	border: 2px solid black;
+	width: 400px;
+	margin-left: 5px;
+}
+
+
+}
+
+@media (max-width: 1050px) {
+
+nav {
+	width: 100;
+	background-color: #170C00;
+	color: white;
+	font-size: 1em;
+	border-bottom: 2px solid black;
+	padding: 1px;
+
+}
+
+nav li {
+	list-style: none;
+	display: inline-block;
+	color: white;
+	padding-right: 1px;
+	padding-left: 1px;
+	border: 2px solid #170C00;
+	margin: 0;
+}
+
+nav li a {
+	text-decoration: none;
+	color: white;
+}
+
+nav li a:hover {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+span {
+	padding-left: 0px;
+	margin: 0;
+}
+
+}
+
+@media (max-width: 650px) {
+	main{
+		width: 100%;
+		margin: 0;
+		border: 0;
+	}
+
+	aside {
+		float: none;
+		width: 100%;
+		margin: 0;
+		border: 0;
+		border-bottom: 2px solid black;
+		padding: 0px;
+		background-color: #D4A46A;
+	}
+
+	section {
+		margin: 0;
+	}
+
+	footer {
+		margin: 0;
+	}
+
+	.cinnLate {
+		display: none;
+	}
+
+	#foodPics {
+		width: 93%;
+	}
+
+	iframe {
+		width: 100%;
+		margin: 0;
+		border: 0;
+	}
+
+	.Hours {
+		display: none;
+	}
+
+	#PCMenu {
+		display: none;
+	}
+
+	#MobileMenu {
+		display: inline;
+		background-color: #170C00;
+		padding: 0;
+		margin: 0;
+	}
+
+	#MobileMenu ul {
+		background-color: #170C00;
+	}
+
+	#MobileMenu ul li {
+		display: block;
+		background-color: #170C00;
+	}
+
+
+}
+
+@media (max-width: 350px) {
+	h3.info {
+		font-size: 1em;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+}
